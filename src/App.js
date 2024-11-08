@@ -1,23 +1,16 @@
 // src/App.js
-
-import React, { useState } from 'react';
-import './App.css';
-import BlogList from './components/BlogList';
-import HospitalInfo from './components/HospitalInfo';
+import React from 'react';
+import './App.css'; // Import the CSS file for styling
+import HealthServicesPage from './HealthServicesPage';
 
 function App() {
   return (
-    <div className="App">
-      {/* Header Section */}
-      <header className="header">
-        <h1>Latest Blogs</h1>
-      </header>
+    <div>
+      {/* Add the styled headline */}
+      <h1 className="headline">All-Inclusive Care</h1>
 
-      {/* Blog Section */}
-      <main>
-        <BlogList />
-        <HospitalInfo />
-      </main>
+      {/* Render the HealthServicesPage component */}
+      <HealthServicesPage />
     </div>
   );
 }
